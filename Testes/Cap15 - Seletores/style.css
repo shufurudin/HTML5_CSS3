@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    font: normal 1em Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+
+.texto{
+    text-align: right;
+}
+
+h1{
+    font-size: 2em;
+    color: #9D00DB;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#titulo-principal{
+    background-color: #3E00A1;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px #330084;
+}
+
+h2{
+    color: #5500DB;
+}
+
+.topico{
+    text-align: right;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:visited{
+    color: #2B00A2;
+}
+a:hover{
+    color: #9600FA;
+    font-style: italic;
+}
+
+.new::before{
+    content: 'new';
+    font-size: 10px;
+    vertical-align: super;
+    color: red;
+    text-decoration: underline;
+}

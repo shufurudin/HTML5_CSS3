@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com listas</h1>
+
+    <h2>Listas Ordenadas</h2>
+    <ol> <!--'ol' de 'ordered list'-->
+        <li>Acordar <!--O 'li' de 'list item' são os itens da lista, o VSCode coloca o /li no final, porém essa tag não precisa necessariamente ser fechada-->
+        <li>Escovar os dentes</li>
+        <li>Rezar
+        <li>Sofrer no Comex</li>
+        <li>Rezar o Terço</li>
+        <li>Projetinho do ThomasGod</li>
+        <li>Dotinha, né...</li>
+    </ol>
+    <ol type="1" start="8"> <!--Note que dentro da tag 'ol' da pra puxar alguns parametros, como alterar o tipo de lista de numeral para letras, ou simplesmente alterar o numero inicial com o parametro start como fiz aqui.-->
+        <li>Pickar Sven</li>
+        <ul type = "circle">
+            <li>Tem outros bonecos para se jogar: Drow, Terror, CK, PL e etc.</li>
+            <li>Você é o HC, não faça movimentos bruscos!</li>
+        </ul>
+        <li>Não errar LH</li>
+        <li>Buildar certo</li>
+        <li>Farm, farm e farm</li>
+        <li>Ganhar ou perder</li>
+        <ul type = "circle">
+            <li>Se o jogo estiver dificil de fechar, tenha calma para que o resto do time cresça e procure encurralar o time inimigo na base.</li>
+        </ul>
+        <li>Se divertir ;)</li>
+    </ol>
+    <ol type="a"> <!--Aqui eu puxhei um parametro que altera o tipo de lista para letras-->
+        <li>Teste</li>
+        <li>Teste</li>
+        <li>Bip</li>
+        <li>Bop</li>
+    </ol>
+
+    <h2>Listas não Ordenadas</h2>
+    <ul type = "circle"> <!--'ul' de 'unordered list'. Os tipos aqui são três: circle, disc e square-->
+        <li>HTML e CSS</li>
+        <ul> <!--Dá para colocar uma lista dentro de outra lista!-->
+            <li>Módulo I</li>
+            <li>Módulo II</li>
+            <li>Módulo III</li>
+            <li>Módulo IV</li>
+            <li>Módulo V</li>
+        </ul>
+        <li>Java Script</li>
+        <li>Ruby</li>
+        <li>Inglês</li>
+    </ul>
+
+    <h2>Personagens de LoL que eu jogava</h2>
+    <ol>
+        <li>Jungle</li>
+        <ol type="a">
+            <li>VI</li>
+            <li>Rek'sai</li>
+            <li>Lee Sin</li>
+            <li>Shyvana</li>
+            <li>Jarvan IV</li>
+        </ol>
+        <li>Suporte</li>
+        <ol type="a">
+            <li>Braum</li>
+            <li>Poppy</li>
+            <li>Janna</li>
+        </ol>
+        <li>ADC</li>
+        <ol type="a">
+            <li>Sivir</li>
+            <li>Tristana</li>
+        </ol>
+    </ol>
+
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+        <li>PS2</li>
+        <ul type="square"> <!--Mais um macete: clicar em multiplos lugares segurando a tecla Alt, fará com que edite em multiplos lugares.-->
+            <li>Black</li>
+            <li>God of War</li>
+            <li>Guitar Hero</li>
+        </ul>
+        <li>Xbox 360</li>
+        <ul type="square">
+            <li>CoD MW3</li>
+            <li>Skyrim</li>
+            <li>UFC</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Chrono Trigger</li>
+            <li>Donkey Kong Country 3</li>
+            <li>Super Mario</li>
+            <li>Street Fighter</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definição</h2>
+    <dl> <!--'dl' de 'definition list'-->
+        <dt>HTML</dt> <!--'dt' de 'definition term'-->
+        <dd>Linguagem de marcação para criação do conteúdo de um site</dd> <!--'dd' de 'definition description'-->
+    
+        <dt>CSS</dt>
+        <dd>Linguage de marcação para a criação do design de um site</dd>
+    
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para criação de interatividade de um site</dd>
+    </dl>
+    
+</body>
+</html>

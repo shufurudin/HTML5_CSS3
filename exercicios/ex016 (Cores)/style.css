@@ -1,0 +1,33 @@
+@charset "UTF-8";
+*{ /*Configurações globais para as CSS*/
+    /*height: 100%;*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-attachment: fixed;
+}
+body{
+    background-image: linear-gradient(310deg, #73645C, #401E12 130%);
+}
+main{ /* Aqui nós selecionamos somente o conteudo em que está dentro do main lá no html.*/
+    background-color: white;
+    width: 600px; /* Para não ocupar toda a tela, nós definimos um tamanho em largura para o main*/
+    padding: 10px; /* Isso dá uma margem nesse quadrado branco, fazendo com que as letras não fiquem grudadas na borda do quadrado.*/
+    margin: auto; /*Centraliza o main*/
+    border-radius: 10px;/* Arredonda as pontas do quadrado*/
+    box-shadow: 7px 7px 12px #401e1277; /*1 parametro: quanto a sombra irá para o lado, 2 parametro quanto a sombra andará para baixo, 3 parametro será o espalhamento da sombra e por ultimo a cor da sombra.*/
+}
+
+h1{
+    color: #4F758C;
+    text-align: center;
+    text-shadow: 0px 2px 2px #354e5e85;
+    font: bold 2.2em 'Times New Roman', Times, serif;
+}
+
+h2{
+    color: #180101;
+    font: bold 1.6em 'Times New Roman', Times, serif;
+}
+
+p{
+    text-align: justify;
+}

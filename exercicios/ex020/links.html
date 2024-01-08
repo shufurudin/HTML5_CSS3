@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /*
+        >SELETORES PERSONALIZADOS<
+
+        CSS|HTML
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo- element
+        >  = children
+        */
+    
+        h1{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        a{
+        color: red;
+        text-decoration: none;
+        font-weight: bold;
+        }
+
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            text-decoration: underline;
+            color: #C2DB00;
+        }
+
+        .especial::before{
+            content: '☆ ';
+        }
+
+        .especial{
+            background-color: rgba(255, 182, 182, 0.767);
+        }
+
+        /*Essa pseudoclasse quer dizer quando o link 'a' for clickado*/
+        a:active{
+            color: #006CDB;
+        }
+
+        a::after{
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: black;
+        }
+    </style>
+    <title>Personalizando Links</title>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://steamcommunity.com/id/xoluR/" rel="external" target="_blank" class="especial">Perfil da Steam</a></li>
+        <li><a href="https://www.youtube.com/channel/UC_W2OAxCYdRjIKvHqNuAmrg" rel="external" target="_blank">Conta no Y2B</a></li>
+        <li><a href="https://www.duolingo.com/profile/shufurudin?via=share_profile_link" rel="external" target="_blank">Perfil do Duolingo</a></li>
+    </ul>
+</body>
+</html>

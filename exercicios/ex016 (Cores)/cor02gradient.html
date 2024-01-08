@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{ /*Configurações globais para as CSS*/
+            height: 100% /*Isso aqui foi usado para gerar o gradiente de cima para baixo e vice-versa, sem isso fica todo repartido*/
+        }
+        body{ /*
+            Um parametro interessante é o radial-gradient, onde você muda o atributo para circle e o gradiente fica circular.
+            Nesse parametro linear-gradiente, pode colocar não só to left, top, bottom e right, pode ser informado em graus como por exemplo 45deg. Dessa forma é possível fazer o gradiente de uma maneira mais personalizada.
+            Se colocar uma porcentagem após a cor, o gradiente para aquela cor específica será de acordo com a porcentagem informada. Nesse caso coloquei 20% para a primeira cor.
+            */
+            background-image: linear-gradient(to left, #00FDFF 20%,#29CCCC, #3D9999, #4F8383);
+            background-attachment: fixed; /*Sem essa propriedade, o degrade fica "faltando" no pesinho da pagina.*/
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando gradiente</h1>
+</body>
+</html>

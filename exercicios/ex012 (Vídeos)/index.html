@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeo hospedado localmente</h1>
+
+    <p>Esta obra prima está hospedada no meu próprio servidor</p>
+    
+    <video width="720" poster="imagens/tumb.jpg" controls>
+        <source src="midia/csgo_video1.mp4" type="video/mp4">
+        <source src="midia/csgo_video1.webm" type="video/webm">
+        <p>Seu navegador não produziu o video <a href="midia/csgo_video1.mp4" download="csgo_video1.mp4" type="video/mp4">clique aqui para baixar</a></p>
+    </video>
+    <!--Mesma piada do audio, sempre considerando a ordem de cima para baixo. Mudam algumas coisas, como o parametro poster para adicionar uma thumb e o width para mostrar o vídeo num tamanho determinado na tela-->
+    <h1>Inserindo vídeo do youtube</h1>
+    <p>Se você conhece essa musiquinha, bem vindo ao clube!</p>
+    <iframe width="720" height="470" src="https://www.youtube.com/embed/oW6PlmQ0mys?si=ovySQqHNLqePblSH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

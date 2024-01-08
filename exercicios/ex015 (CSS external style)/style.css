@@ -1,0 +1,20 @@
+@charset "UTF-8"; /*Esse @ é uma regra, que habilita o uso de acentuações. Esta regra em específico é para problemas de compatibilidade com o código, onde pode haver algum com acentuação ou caracter que está disponível em UTF-8*/
+
+body {
+    background-color: grey;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    color:goldenrod;
+    background-color:darkgray;
+}
+
+h2 {
+    color:blanchedalmond
+}
+
+p {
+    text-align: justify;
+}

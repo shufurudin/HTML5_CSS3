@@ -1,0 +1,49 @@
+<!--Dica muito boa, selecionar uma palavra ou frase e apertar Ctrl + Shift + P e selecionar o comando 'Emmet: Wrap with Abbreviation', então você pode digitar qual tag você quer colocar nessa palavra/frase. Você pode escrever um paragrafo inteiro, depois selecionar o texto, apertar o comando, selecionar o Emmet ali e digitar p (p que puxará a tag <p>)-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Formatação de Textos</title>
+    <!--Aqui, dentro do head, nós estamos puxando a tag style para modificar todos os marks do texto e alterar sua cor para aqua, isso é CSS-->
+    <style>
+        mark {
+            background-color: salmon
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+
+    <h2>Negrito/Destaque</h2>
+    <p><b>Não semantico</b>: Esta é a forma não semantica de negritar uma palavra, com a tag &lt;b&gt;.</p>
+    <p><strong>Semantico</strong>: Esta é a forma semantica de negritar uma palavra, com a tag &lt;strong&gt;.</p>
+
+    <h2>Itálico/Ênfase</h2>
+    <p><i>Não semantico</i>: Aqui a palavra está em itálico, com a tag &lt;i&gt;.</p>
+    <p><em>Semantico</em>: Agora temos a palavra em ênfase, com a tag &lt;em&gt;.</p>
+
+    <h2>Texto marcado</h2>
+    <!--Já nessa parte o style foi puxado dentro da própria tag mark, aqui irá modificar somente essa tag em específico.-->
+    <p><mark style="background-color:aquamarine">Com style local</mark>: Texto marcado com a tag &lt;mark&gt; e a cor definida pelo parametro style dentro da própria tag &lt;mark&gt;.</p>
+    <p><mark>Com style do head</mark>: Texto marcado com a tag 'mark', porém a cor é definida pelo style dentro da tag head.</p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p><big>Texto grande</big> (tag &lt;big&gt; está ficando obsoleta, wtf!)</p>
+    <p><small>Texto pequeno</small></p>
+
+    <h2>Texto exluído</h2>
+    <p><del>Podemos marcar um texto como exluído para indicar que ele pode ser lido, mas não considerado.</del></p>
+
+    <h2>Texto inserido</h2>
+    <p><u>Não semantico</u>: Essa é a forma de sublinhar o texto, porém não semanticamente com a tag &lt;u&gt;.</p>
+    <p><ins>Semantico</ins>: Aqui sim a forma correta de sublinhar o texto, de forma semantica com a tag &lt;ins&gt;.</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Para escrever coisas do genero: x<sup>9</sup> + 20</p>
+    
+    <h2>Texto subscrito</h2>
+    <p>Para escrever coisas do tipo: CO<sub>2</sub></p>
+    </body>
+</html>

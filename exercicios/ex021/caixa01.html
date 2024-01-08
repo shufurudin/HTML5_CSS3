@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+            height: 300px;
+            width: 380px;
+            text-align: center;
+
+            border: 4px solid aqua;
+            /*
+            border, shorthand de:
+            border-width: 4px;
+            border-style: solid;
+            border-color: aqua;
+            */
+
+            padding: 5px; 
+            /*
+            padding, shorhand para:
+            padding-top: 5px;
+            padding-right: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;
+            */
+            /*
+                Nesse caso bastou informar um valor, pois os quatro lados são iguais. Caso não sejam, será necessário informar os quatro valores separadamente.
+                Se precisar alterar as medidas de cima e baixo e de um lado e outro igualmente, basta seguir da seguinte forma:
+                padding: 5px 10px;
+                Onde 5px ficarão para cima e baixo e 10 px para esquerda e direita.
+            */
+
+            margin: 15px auto 15px auto; 
+            /*para deixar a caixa centralizada no meio*/
+
+            /*sempre fazer o padding, border e margin no sentido horario: cima, direita, baixo e esquerda*/
+        }
+
+        a{
+            border: 1px solid blueviolet;
+
+            margin: 10px;
+            
+            /*
+            margin, shorthand para:
+            margin-top: 10px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            */
+            
+            outline: 2px dashed chartreuse;
+            
+            /*
+            outline, shorthand para:
+            outline-width: 2px;
+            outline-style: dashed;
+            outline-color: chartreuse;
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são box-level, <a href="#">mas links são inline-level</a></p>
+    <p>Vejamos como isso funciona no DevTools no google chrome.</p>
+    <!--
+        user agent = configuração do navegador
+        display: block; = box-level
+    -->
+</body>
+</html>

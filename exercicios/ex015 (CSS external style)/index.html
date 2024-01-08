@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css"> <!--escolhendo o 'link:css' teremos essa linha, onde ele puxara a CSS dum arquivo externo. Não precisando digitar uma linha de CSS aqui no arquivo HTML!-->
+    <title>Estilos Externos</title>
+</head>
+<body>
+    <h1>Capítulo 1</h1>
+    <h2>Capítulo 1.1</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam quidem quam odit impedit, ad dolorem, reprehenderit provident, placeat soluta obcaecati voluptatibus minima temporibus fugit tenetur corrupti commodi sequi. Molestiae, magnam vitae id quisquam inventore ipsum accusamus optio beatae nemo dolorum dicta placeat vel, quas doloremque alias quod quasi repellendus voluptatibus!</p>
+    <h2>Capítulo 1.2</h2>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <h1>Capítulo 2</h1>
+    <h2>Capítulo 2.1</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum nesciunt esse ipsum cum possimus accusamus tempora molestias totam velit sit voluptatem porro vel error ex veniam cumque aut, natus obcaecati id architecto. Aperiam atque harum sed consectetur perspiciatis doloribus reprehenderit, iusto fuga est quidem tempora!</p>
+    <p><a href="pagina02.html" rel="next">Ir para a página 2</a></p>
+</body>
+</html>
+<!--
+    O método externo é o melhor de todos, pois ele mantem a semantica do html e passa o design para todas as páginas que possuem esse link:css, deixando muito prática a alteração de design do site.
+    É possível incluir mais de um link:css, podendo diferenciar o design em outras páginas mas mantendo o padrão da .css "base".
+    Em resumo:
+    Usar Inline somente para fazer uma mudança específica e pontual para aquela pagina.
+    Usar o modo Local/Interno somente para complementar o Externo. Caso o Local/Interno começe a ficar muito grande, significa que deve deixar de ser escrito no html e passar para uma .css própria.
+-->

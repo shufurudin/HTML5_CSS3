@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            /*
+                Quando a font family tem duas palavras, é necessário colocar entre aspas.
+                Ao digitar o nome da fonte, o VS Code abre uma janelinha com uma sugestão que contém mais de uma fonte, separadas entre vírgulas. Isso é para que, caso o dispositivo não contenha a fonte informada, o navegador escolhe a próxima até chegar na última. Por isso que a última sugestão nunca é uma fonte específica, mas sim uma categoria. Aqui por exemplo seria qualquer fonte não serifada.
+                Pesquise por CSS web safe font combinations e vá para o site da W3Schools, fica a dica.
+            */
+            font-size: 1em;
+            /*
+                Medidas Absolutas
+                - cm (em relação ao corpo do tipo), mm, in, px, pt (ponto, que é a medida em que temos lá no word e outros programas de edição de texto), pc (paica)
+
+                Medidas Relativas
+                - em (relativo ao tipo M maiusculo da fonte), ex (relativo a altura x), rem, vw (relativo a largura da viewport), vh (relativo a altura da viewport), %
+
+                Recomendação da W3C
+                - px e em
+                em na verdade é relativo ao tamanho padrão/natural em que a fonte foi criada.
+                Geralmente as fontes tem 16px de tamanho padrão. Então, 16px = 1em.
+            */
+        }
+    </style>
+    <title>Fontes em CSS</title>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam dolorum officiis earum incidunt, nobis cupiditate? Iste ducimus aspernatur similique qui laborum magni consectetur dolore, doloremque iure blanditiis, quibusdam earum sapiente. Doloribus, nihil reprehenderit?</p>
+    <h2>Lorem, ipsum dolor</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ipsum itaque dolorum libero nostrum aliquam ratione asperiores, distinctio possimus ipsa.</p>
+    <h2>Lorem, ipsum</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur expedita veritatis, nisi reiciendis quasi nam.</p>
+</body>
+</html>

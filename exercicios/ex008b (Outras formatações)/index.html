@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Outras formações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte e Pré-formatação</h2> <!--Tag <code>, para transformar o texto em fonte mono-espaçada.-->
+    <p>Existem várias maneiras de dar um output em Ruby, conheça três delas: <code>puts</code>, <code>print</code> e <code>p</code></p>
+    <pre>
+        <code> <!--Veja que a tag 'code' somente altera para uma fonte mono-espaçada, porém não puxa a indentação. Para isso, basta colocar a tag <code> dentro da tag <pre>. A tag <pre> lê todos os espaços e linhas, ai fica com cara de código.--> <!--Mais uma dica absurda! O texto abaixo estava pra frente, pra puxar ele pra tras  bastou selecionar todo ele e apertar Shift + TAB, ele foi jogando o texto para tras. Pra frente é quase a mesma coisa, basta selecionar o texto e só dar o TAB.-->
+    print "Qual seu nome?"; nome = gets
+
+    if nome == "Gabriel"
+        puts "Você tem o mesmo nome que eu!"
+    else
+        puts "Uau! #{nome} é um nome muito bonito."
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <p>Como diria Gabriel: <q>Comex é uma merda!</q></p>
+    <h2>Citações completas</h2>
+    <p>Como diria Santo Tomás, na coletanea de seus sermões sobre o Pai Nosso e a Ave Maria:</p>
+    <blockquote cite=""> <!--Dentro do parametro cite, deve-se colocar o link da citação. Nas minhas pesquisas sobre esse paramentro, parece que deve ser usado somente quando a source é um URL, não vi menção alguma sobre livros ou coisa do genero.-->
+        A Oração Dominical, entre todas, é a oração por excelência, pois possui as cinco qualidades requeridas para qualquer oração. A oração deve ser: confiante, reta, ordenada, devota e humilde.
+    </blockquote>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou achando muito legal!</p>
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar paginas em HTML.</bdo></p>
+</body>
+</html>

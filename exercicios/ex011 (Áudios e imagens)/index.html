@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1> 
+
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem grande">
+    </picture>
+    <!--
+        Essa tag picture serve para escolher a imagem correta a ser exibida para o usuário, dependendo do tamanho da tela de seu navegador. Dentro da tag picture nós começamos com a tag img como já vimos no passado, nessa tag atribuimos a imagem maior. Acima dessa tag colocamos a tag source (no atalho do VS code tem de ser o source media:type), por padrão ela vem como min-width mas aqui nós faremos com max-width.
+            Essa parte do max-width tem de ser atribuido um valor em pixels (px), sempre colocar o valor de uma forma que, quando for fazer o teste no navegador de esticar e diminuir, que a barra de rolagem lateral nem apareça. Por mais que a imagem grande seja 1000px, se colocar o max-width como 1000px a tela mostra a imagem grande com a barra de rolagem lateral (acredito que o motivo disso seja as margens que o site naturalmente tem, parece que sempre tem de colocar uma 'folga' de pixels para fazer aparecer a outra imagem, smoth)
+        Depois selecionamos a imagem para o parametro 'srcset'
+            Infelizmente não dá para fazer o comando de Ctrl + Espaço dentro desse parametro, tem de ser na munheca.
+        Por fim, basta colocar em type o tipo de imagem após a /
+        Veja que o processo se repete para a imagem menor. Agora, uma coisa importante, a ordem em que está escrito de baixo, com o maior, para cima, com o menor. Isso é essencial, pois se não estiver nesta ordem (maior em baixo e menor em cima) o navegador não vai funcionar como deveria e a imagem não aparecerá de acordo com que o navegador muda de tamanho. 
+        Aqui nós colocamos a maior em baixo, mas o professor falou que dá para fazer começando da menor. Acredito que a lógica seja parecida, porém com a tag img em cima e as sources abaixo, por ordem de tamanho tbm.
+    -->
+    <h1>Reprodução de audio</h1>
+
+    <p>Muito facil colocar audio em HTML5</p>
+    <audio preload="metadata" controls>
+        <source src="midia/KAAN_PARS-BELIEVE_IN_ME.mp3" type="audio/mpeg">
+        <source src="midia/KAAN_PARS-BELIEVE_IN_ME.ogg" type="audio/ogg">
+        <source src="midia/KAAN_PARS-BELIEVE_IN_ME.wav" type="audio/wav">
+        <p>Por algum motivo o seu navegador não conseguiu executar o áudio. <a href="midia/KAAN_PARS-BELIEVE_IN_ME.mp3" download="KAAN_PARS-BELIEVE_IN_ME.mp3" type="audio/mpeg">Clique aqui para baixa-lo</a></p>
+    </audio>
+    <!--
+        Quando digitar audio no VS Code, aparecerá a tag audio com alguns parametros pré-definidos, pode tirar todos eles e fazer dessa forma como está acima. No VS Code, puxar sempre a opção source:src que virá com os parametros desejados.
+        Procurar sempre colocar mais de um tipo de arquivo para ser executado, pois o navegador da pessoa pode não suportar tal tipo de arquivo e seu audio acabará não tocando. Então, semelhante ao caso da imagem, nós colocamos várias sources, se não for a primeira, vai a segunda, se não for a segunda vai a terceira e como última opção, seria baixar o arquivo. O fluxo é sempre de cima para baixo.
+        Não é recomendado arquivos wav para serem executados no site, pois são extremamente pesados. Pode colocar ele como opção para ser baixado.
+        Parametro preload tem três valores: o auto, que vem como padrão caso não defina neste parametro, que o audio vai carregando junto com o site (horrivel para podcasts, pois o audio vai carregando enquanto o usuário navega no site); o metadata que carrega somente  os dados do audio como por exemplo sua duração, somente quando o usuario der play que o audio começa a ser carregado; o none ele carrega nada do audio e só após o usuário clicar é que aparecerá os metadados e o audio começará a ser carregado.
+        Sempre colocar o parametro controls, para aparecer o controlador de aúdio.
+        Tem outro parametro chamado loop, que o próprio nome fala por si.
+    -->
+</body>
+</html>

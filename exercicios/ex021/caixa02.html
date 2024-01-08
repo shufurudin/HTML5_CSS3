@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: burlywood;
+            text-align: justify;
+            margin: 0px;
+        }
+        header{
+            background-color: whitesmoke;
+            padding: 5px;
+            margin: 5px;
+        }
+        nav{
+            background-color: rgba(128, 128, 128, 0.685);
+            padding: 3px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.700);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 35px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: whitesmoke;
+            padding: 5px;
+            margin: 5px;
+            border-radius: 5px;
+            box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.400);
+        }
+        article{
+            background-color: rgba(128, 128, 128, 0.37);
+            padding: 3px;
+        }
+        article > aside{
+            background-color: rgba(128, 128, 128, 0.685);
+            padding-right: 5px;
+            text-align: right;
+            
+        }
+        p > a{
+            color: white;
+            text-decoration: none;
+        }
+        p > a:hover{
+            text-decoration: underline;
+        }
+        footer{
+            background-color: rgb(68, 68, 68);
+            color: rgba(255, 255, 255, 0.74);
+            text-shadow: 0px 0px 2px white;
+            font-weight: bold;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer:hover{
+            color: white;
+            text-shadow: none;
+        }
+        footer > p{
+            margin: 0px;
+        }
+        div#bola{
+            height: 50px;
+            width: 50px;
+            background-color: white;
+            margin: 15px auto 15px auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div></div> <!--Grouping tag box-level-->
+    <span></span> <!--Grouping tag inline-level-->
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header> <!--Cabeçalho-->
+    <main>
+        <section id="noticias">
+        </section>
+        <section id="artigos">
+            <article>
+                <h2>Resposta ao Sr. Marcos A. Abrão</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae ut, assumenda distinctio minima ea tempora nesciunt explicabo tenetur placeat impedit libero consequatur aliquid, labore nemo ipsa amet dolorum corrupti illo.</p>
+                <aside>
+                    <p>Referencias e detalhes no <a href="#">arquivo em anexo</a></p>
+                </aside>
+            </article>
+        </section>
+    </main> <!--Conteudo principal-->
+    <footer>
+        <p>Desenvolvido por KILAH</p>
+    </footer> <!--Rodapé-->
+    <div id="bola"></div>
+</body>
+</html>

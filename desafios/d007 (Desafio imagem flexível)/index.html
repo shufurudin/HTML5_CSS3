@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    
+    <p>Aumente o tamanho da sua tela e veja a magia acontecer &#x1F60E;!</p>
+    <picture>
+        <source media="(max-width: 450px)" srcset="imagem/sumo-main_206.jpg">
+        <source media="(max-width: 750px)" srcset="imagem/sumo-main_410.jpg">
+        <source media="(max-width: 1250px)" srcset="imagem/sumo-main_714.jpg">
+        <img src="imagem/sumo-main_1200.jpg" alt="imagem de sumo">
+    </picture>
+</body>
+</html>

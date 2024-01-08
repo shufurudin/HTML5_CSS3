@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p><a href="https://www.dota2.com/home" target="_blank" rel="external">Click aqui</a> e vamos jogar um dotinha.</p> <!--a tag 'a' de 'anchor' virá com um parametro somente (href) que nele você colocará o link externo desejado. Para que a pessoa clique no link e abra numa nova aba ao inves de sobrepor na aba do nosso site, basta colocarmos os parametros 'target' e 'rel', o 'target' nós colocamos como '_blank' para abrir a aba nova, enquanto o 'rel' nós colocamos como 'external' para indiciar ao navegador que esse anchor é um link externo ao nosso site (lembresse da semantica, isso é muito importante)-->
+
+    <p>Um dos melhores canais de Dota 2, para iniciantes era o do <a href="https://www.youtube.com/c/ryotgg">Ryotgg.</a></p>
+    <!--Tanto é que nesse 'a' eu não coloquei os paramentros 'target' e 'rel' e acaba indo pro link substituindo nosso site na mesma aba-->
+
+    <p>Veja também <a href="https://www.dotabuff.com/" hreflang="en" target="_blank" rel="external">este excelente site</a> com estatisticas do jogo.</p>
+    <!--Aqui temos um novo parametro muito util para mostrar ao navegador qual idioma está a pagina do link externo 'hreflang'-->
+
+    <p>Para ver a relação dos herois que mais gosto no Dota2, <a href="pag002.html" rel="next">click aqui</a>.</p> <!--Aqui temos um link interno, veja que neste caso não é necessário colocar o parametro target com o valor _blank para abrir uma nova aba, mas sim continuará na mesma aba que é o que queremos pois o usuário estará ainda navegando no mesmo site que é o nosso. Dentro do href podemos usar o atalho Ctrl + Espaço para abrir a janela de navegação dos arquivos. O parametro rel leva o valor next para mostrar ao navegador que o link interno levará a uma página que é sequencia desta.-->
+
+<br>
+<hr>
+    <p><a href="noticias/pag003.html" rel="next">Veja as ultimas noticias no mundo do Dota2</a></p> <!--Aqui uma pequena difereça dentro do href, pois o arquivo está dentro de uma pasta e então precisa puxar a pasta para depois o arquivo-->
+    <p>Acesse <a href="replays/pag004.html" rel="next">este link</a> e seja convencido de assistir seus próprios replays!</p>
+
+    <h1>Downloads</h1>
+    <ol>
+        <li><a target="_blank" type="application/pdf" download="10 - Ligações em toda parte.pdf" href="downloads/10 - Ligações em toda parte.pdf">PDF da aula 10 para download</a></li> <!--Pelo menos no G Chrome, o PDf não baixa mas sim ele é aberto no navegador, por isso coloquei _blank para pelo menos abrir em outra aba. Esses paramentros type e download com esses valores eram para, em teoria, fazer com que o navegador baixa-se o pdf e não abrilo, talvez isso ocorra em outro navegador mas não acontece no Chrome.-->
+        <ul><a href="downloads/10 - Ligações em toda parte.zip">(Arquivo zipado)</a></ul> <!--Aqui vemos que, sem mesmo os parametros download e type, o arquivo é baixado. Mas é sempre bom informar tais parametros para indicar ao anavegador que a ancora (anchor) se trata de um arquivo para baixar e não uma outra pagina-->
+        <!--Para esses parametros download e type para baixar arquivos, tem um site chamado iana.org que tem os tipos de arquivos e o valor para se colocar nos parametros-->
+    </ol>
+</body>
+</html>

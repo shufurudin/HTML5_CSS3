@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        /*Tem navegadores que funcionam melhor com arquivos de fontes .ttf e outros com o formato .otf. É bom procurar uma fonte que possua as duas.*/
+        @font-face {
+            font-family: 'Angel';
+            src: url('fonts/Angel wish.otf') format('opentype'), url('fonts/Angel wish.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        /*.otf dessa fonte está bugado. Se usar somente o .ttf ela funciona.*/
+        @font-face {
+            font-family: 'Goth';
+            src: url('fonts/Classic rock band.otf') format('opentype'), url('fonts/Classic rock band.ttf') format('truetype');
+        }
+        /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - truetype-opentype
+            - truetype-aat (Apple Advanced Typography)
+            - svg
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Goth', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+    <title>Fonte Externas</title>
+</head>
+<body>
+    <h1>Título</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, aspernatur! Modi quibusdam nulla dignissimos quas eius cum pariatur ab mollitia molestias.</p>
+    <a href="fonte01.html" rel="prev">Home Page</a>
+</body>
+</html>

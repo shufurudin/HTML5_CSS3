@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Seletores Personalizados</title>
+</head>
+<body>
+    <!--Aqui no primeiro h1, nós atribuimos um id para ele. Dessa forma nós conseguiremos alterar este h1 em específico sem alterar todos os outros. Um mesmo id não pode ser repetido dentro de um mesmo arquivo HTML.-->
+    <h1 id="principal">Criando Sites com HTML e CSS</h1> 
+    <h1>Aprendendo HTML</h1>
+    <h2 class="basico">HTML básico</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, eveniet vitae? <span class="destaque">Dolores, maxime iure?</span> Exercitationem ipsam impedit consequuntur distinctio at!</p>
+    <!--class serve para classificar varias tags com uma mesma "representação", neste caso temos a class intermediario. Lá na CSS nós configuraremos as caracteristicas das tags classificadas com essa class. Mais abaixo no arquivo veremos uma segunda tag também marcada com essa class e será alterada de acordo também.-->
+    <h2 class="intermediario">HTML intermediário</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam earum officia corporis sapiente nesciunt accusantium doloremque praesentium cumque odio. Placeat, labore sequi. <span class="destaque">Dolor voluptas cum officiis velit, adipisci placeat veritatis, ducimus suscipit, asperiores ab unde laborum autem in corporis.</span> Repudiandae, modi autem consequuntur tenetur aperiam nemo inventore? Aliquam, optio! Modi provident perspiciatis cupiditate rerum fuga voluptatem laboriosam, iure quae temporibus blanditiis nam tempora ullam consequuntur laudantium necessitatibus voluptate? Neque consequatur, ea harum autem aliquam, dolorem ratione molestias perferendis adipisci amet quidem asperiores magni deleniti magnam. Vel totam, fugit consequatur illum, molestiae nobis, perferendis ut blanditiis odio dolore ad dignissimos. Sunt non, tempora exercitationem deserunt amet assumenda nisi est soluta sed similique delectus excepturi quos libero nostrum consequatur. Vel cum, minima cupiditate placeat consequuntur molestiae sit illum iste aut voluptatem? Ex officiis neque earum quisquam itaque, eum nulla ratione possimus magni laudantium, ut, dignissimos fuga. Veniam in iusto veritatis quos laborum ab, vero voluptatibus doloremque molestias omnis possimus asperiores aliquam. Fuga nihil sequi, repudiandae id possimus animi eos iusto veniam aperiam vel aspernatur dolores culpa. Modi atque odio totam earum reiciendis veritatis laborum nisi voluptatem sunt excepturi aliquid vero porro rem, amet quos in provident aut est suscipit similique facilis id fugit? Dolorum, inventore quod qui minus fuga labore numquam quisquam veniam facere voluptatem, libero repudiandae?</p>
+    <h2 class="avancado">HTML avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis vitae sunt dolorum cumque impedit id.</p>
+    <h1>Aprendendo CSS</h1>
+    <h2 class="basico">CSS básico</h2>
+    <!--
+        Colocamos a tag span no meio do texto somente para seleciona-lo. Com essa tag poderemos aplicar ids, class e outras propriedades somente a essa secção demarcada com a tag span.
+        Aqui vemos que é possível colocarmos duas class simultaneamente, bastando separa-las por espaço.
+    -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <span class="destaque basico">Tenetur, in.</span></p>
+    <h2 class="intermediario">CSS intermediário</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis repudiandae libero recusandae vero magni impedit ullam doloribus debitis nesciunt, possimus, quod vel nemo dignissimos, perferendis fugit eaque ea fugiat perspiciatis.</p>
+    <h2 class="avancado">CSS avançado</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos hic repellat veniam sit. Mollitia.</p>
+    <!--É possível atribuir id e class simultaneamente, porém os valores atribuidos no id sobreporão os mesmos valores em class-->
+    <h1 class="avancado" id="principal">Conclusão</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis officiis odit suscipit neque, aliquam quaerat quia, alias non fugit natus, tempora hic quasi! Animi blanditiis corrupti ea, consequuntur vel perspiciatis beatae.</p>
+</body>
+</html>

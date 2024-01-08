@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Propriedade das fontes</title>
+</head>
+<body>
+    <h1>Peso</h1>
+    <p>Peso é a espesura da fonte, corriqueiramente conhecido como bold e light por exemplo. A propriedade CSS para alterar o peso da fonte é:</p>
+    <code>font-weight: ;</code>
+    <p>Muitas fontes possuem somente o seu peso normal e o bold (nergrito), entretanto a variedade de pesos vai além disso. Os tipos de valores a serem inseridos na propriedade <code>font-weight: </code> são duas: númerica e descritiva.</p>
+
+    <h2>Peso númerico</h2>
+    <p>Essa é a forma mais minuciosa de selecionar o peso da fonte, indo de 100 em 100 e partindo do 100 até 900. Pouquíssimas fontes tem todas as variações de 100 até 900, então muito provávelmente você irá se deparar com nenhuma mudança no peso caso você saida do 200 para o 300, por exemplo.</p>
+
+    <h2>Peso descritivo</h2>
+    <p>Esta forma de determinar o peso da fonte é mais genérica e acertiva. São quatro valores possíveis:</p>
+    <ul>
+        <li>lighter</li>
+        <li>normal</li>
+        <li>bold</li>
+        <li>bolder</li>
+    </ul>
+
+    <h1 style="text-decoration: dotted;">Estilo</h1>
+    <p>O estilo de fonte nada mais é que o itálico, sublinado, riscado e etc. Temos duas formas de "estilizar" nossas fontes:</p>
+    <ul>
+        <li><code>font-style: ;</code></li>
+        <li><code>text-decoration: ;</code></li>
+    </ul>
+    <p>Os valores para estas propriedades são:</p>
+    <ul>
+        <li><code>font-style:</code></li>
+        <ul>
+            <li>italic</li>
+            <li>oblique</li>
+            <li>normal</li>
+            <li>inherit</li>
+            <li>initial</li>
+            <li>unset</li>
+        </ul>
+        <li><code>text-decoration:</code></li>
+        <ul>
+            <li>dashed</li>
+            <li>dotted</li>
+            <li>double</li>
+            <li>line-through</li>
+            <li>none</li>
+            <li>overline</li>
+            <li>solid</li>
+            <li>underline</li>
+            <li>wavy</li>
+        </ul>
+    </ul>
+    <p>Mais uma vez, nem todas fontes possuem todas estas variações.</p>
+
+    <h1>Combinação</h1>
+    <p>Todas essas propriedades são cumulativas, desde que a fonte permita.</p>
+    <h2>Shorthand/mãozinha</h2>
+    <p>Quatro configurações para fontes são utilizadas diariamente na rotina de um desenvolvedor HTML/CSS, são elas:</p>
+    <ul>
+        <li><code>font-style: </code></li>
+        <li><code>font-variant: </code></li>
+        <li><code>font-weight:</code></li>
+        <li><code>font-size: </code></li>
+        <li><code>font-family: </code></li>
+    </ul>
+    <p>Ao invés de digitar estas quatro propriedades em cada declaração, nós podemos utilizar um atalho que damos o nome de shorthand. Nada mais é que uma mãozinha em que o CSS nos proporciona.</p>
+    <p>Para isso, basta digitar a propriedade <code>font:</code> dentro da declaração. Mas não só isso, os valores que ali serão inseridos tem uma ordem fixa que deve ser obedecida:</p>
+    <ol>
+        <li>font-style</li>
+        <li>font-weight</li>
+        <li>font-size</li>
+        <li>font-family</li>
+    </ol>
+    <p>Vejamos um exemplo:</p>
+    <pre>
+        <code>
+            h1 {
+            font: italic bolder 3em 'Work Sans', sans-serif;
+            }
+        </code>
+    </pre>
+</body>
+</html>

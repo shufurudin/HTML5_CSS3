@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /*Quando passar o mouse por cima do texto em que está o div, ele ficará vermelho*/
+        div:hover{
+            color: red;
+        }
+        
+        /*O professor não mostrou, mas eu coloquei esse limitador aqui na div. A div naturalmente ocupa todo o espaço de uma linha na tela, com isso, ao passar o mouse na mesma linha onde se encontra o texto, acabaria aparecendo o texto escondido. Esse detalhe acaba fazendo com que o texto escondido apareça somente quando o mouse passar realmente por cima do texto.*/
+        div{
+            width: 75px;
+        }
+
+        /*Aqui o texto escondido aparecerá, graças a subclasse hover*/
+        div:hover>p{
+            display: block;
+            color: white;
+            background-color: red;
+            width: 140px;
+        }
+        
+        /*Abaixo significa que iremos alterar o paragrafo que está dentro da div e não os demais paragrafos.*/
+        div>p{
+            display: none;
+        }
+    </style>
+    <title>Exemplo de Hover</title>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passse o mouse no texto abaixo:</p>    
+    <div>
+        Bem aqui!
+        <p>TEXTO SECRETO!</p>
+    </div>
+    <p>Fim do exemplo</p>
+</body>
+</html>
