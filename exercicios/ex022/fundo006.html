@@ -7,21 +7,37 @@
     <style>
         body{
             height: 98vh;
+            /*
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; 
+            background-size: cover;
+            background-attachment: fixed;
+            */
             /*
+                background-size
                 100%: A imagem se adapta para ocupar 100% da tela. Pode distorcer a imagem.
                 contain: Faz com que imagem apareça por inteiro.
                 cover: Faz cobrir toda a viewport, podendo cortar a imagem.
             */
+            /*
+                Shorthand - background
+
+                - Do professor:
+                color > image > position > repeat > size* > attachment
+                Na época do professor parece que na documentação apresentava o background-size na shorthand, porém não funcionava.
+                
+                - Do site da W3 Schools
+                color > image > repeat > attachment > position
+            */
+            background: black url(imagens/wallpaper002.jpg) no-repeat fixed center center;
+            background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 450px;
+            max-width: 450px;
             padding: 0px 15px;
             margin: 0px auto 0px auto;
             border: 1px solid rgba(0, 0, 0, 0.26);
@@ -38,13 +54,17 @@
             margin: 10px 0px;
         }
     </style>
-    <title>Document</title>
+    <title>Fundo Fixo de Tela</title>
 </head>
 <body>
     <main>
         <h1>Teste de Imagem de Fundo</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident doloremque soluta quia iusto, incidunt dolore commodi exercitationem laudantium, corrupti magnam veniam voluptate eveniet nostrum doloribus at porro. Quos cumque earum culpa magnam. Officiis totam at quaerat possimus harum quis qui ducimus cum velit? Tenetur obcaecati, omnis provident non at tempore minus? Debitis quod veniam iusto?</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam asperiores in officia necessitatibus, ex veritatis aperiam, sed cumque dolorem earum eos. Voluptate, deserunt obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, repudiandae recusandae repellat aut placeat blanditiis ex saepe doloribus libero id, consequatur quas accusamus facilis itaque.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aliquam asperiores in officia necessitatibus, ex veritatis aperiam, sed cumque dolorem earum eos. Voluptate, deserunt obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, repudiandae recusandae repellat aut placeat blanditiis ex saepe doloribus libero id, consequatur quas accusamus facilis itaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque explicabo, in harum, a deleniti hic nesciunt cupiditate molestias dolores culpa magni iste, quo repudiandae assumenda non maiores natus? Architecto aperiam ducimus repellendus praesentium provident et, mollitia quis, ab neque impedit dolorum iure molestiae, recusandae molestias distinctio facilis dolores. Aliquid consequuntur temporibus velit est quasi. Exercitationem animi quidem fuga facere molestiae esse nesciunt ut quas nisi laboriosam ducimus delectus voluptatibus blanditiis maiores numquam optio, reprehenderit dolor beatae, ex a impedit error asperiores sequi praesentium. Odio est numquam aperiam soluta, enim optio.</p>
+        <h2>Continuando o Teste</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum at laudantium animi reiciendis rem, nesciunt inventore quos assumenda eum? Ut, explicabo fugit? Architecto nesciunt quia et iste ipsam minus fugit corporis officiis ex distinctio saepe exercitationem repellat eligendi cum impedit numquam laborum possimus, adipisci quisquam! Magni temporibus, consequuntur numquam pariatur iste quasi libero doloremque non error! Maiores hic vel aliquam recusandae ex quia molestias architecto cupiditate nisi eius, sint repellendus, necessitatibus reiciendis sapiente eos? Non dignissimos sunt ad, a vitae explicabo aliquam natus, eaque accusamus, autem facere quod impedit corrupti amet ipsa tenetur! Nemo impedit blanditiis aut tenetur soluta voluptatum at sit fugit, omnis ullam quasi necessitatibus inventore ipsum nobis explicabo facilis quis atque harum enim totam cumque! Labore non veniam dignissimos. Sapiente, quaerat. Doloribus, error possimus maxime exercitationem, voluptatum velit similique soluta inventore at eligendi qui ut? Fuga eum voluptatibus explicabo dicta sequi ea modi, animi quidem nostrum repudiandae?</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti fuga eos consequatur quae. Voluptate numquam debitis repellat accusamus mollitia labore reiciendis modi accusantium qui.</p>
     </main>
 </body>
 </html>
