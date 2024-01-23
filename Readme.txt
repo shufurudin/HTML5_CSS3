@@ -9,3 +9,4 @@ Ctrl + Espaço (abrirá uma janela para navegar dentro da pasta onde está o arq
 Shift + TAB (Selecionando a palavra/texto e executando esse comando, ele joga o texto pra trás. O oposto ocorre quando é feito apenas com o TAB)
 Alt + selecionar (clicar em multiplos lugares segurando a tecla Alt, fará com que edite em multiplos lugares)
 Alt + seta pra cima (volta a pasta no explorador de arquivo)
+Alt + Shift + F (formata o código)
