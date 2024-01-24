@@ -54,20 +54,20 @@ section.imagem1{
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: TOP;
+    background-position: top;
     padding: 75px 0px;
 }
 
 article.aberto{
-    width: 75vh;
+    max-width: 75vh;
     padding: 0px 0px;
-    margin: auto 36px;
+    margin: 0 36px;
     background-color: rgba(0, 0, 0, 0.384);
 }
 article.aberto1{
-    width: 77vh;
+    max-width: 77vh;
     padding: 0px 0px;
-    margin: auto 36px;
+    margin: 0 35px;
     background-color: rgba(0, 0, 0, 0.384);
 }
 
