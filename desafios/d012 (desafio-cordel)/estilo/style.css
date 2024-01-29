@@ -59,11 +59,26 @@ section.normal {
 section.imagem {
     background-color: rgb(29, 29, 29);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5); /*inset é uma sombra interna, 6px, 6px, 13px de espalhamento, 0px de ampliação*/
+    background-size: cover;
+    background-attachment: fixed;
 }
 section.imagem > p {
-    background-color: rgb(15, 15, 15);
+    background-color: rgba(15, 15, 15, 0.450);
     display: inline-block; /*A box se adapta o tamanho ao seu conteudo*/
     padding: 5px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.486);
+}
+section > p {
+    padding-bottom: 2em;
+}
+
+section#img01 {
+    background-image: url(../imagens/background001.jpg);
+    background-position: right, center;
+}
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
 }
 
 footer {
