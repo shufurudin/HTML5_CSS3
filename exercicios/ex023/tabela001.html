@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 250px;
+            border-collapse: collapse; /*Espaço entre as borders do td. collapse retira os espaços.*/
+            border: 3px solid red;
+        }
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        td.dado {
+            background-color: yellow;
+        }
+        tr.linha {
+            background-color: rgb(206, 206, 206);
+        }
+    </style>
+    <title>Tabelas</title>
+</head>
+<body>
+    <h1>Minha primeira tabela</h1>
+
+    <table>
+        <tr> <!--tr = table row--> <!--primeira linha-->
+            <td class="dado">A1</td> <!--td = table data-->
+            <td>B1</td>
+            <td>C1</td>
+        </tr> 
+        <tr class="linha">
+            <td>A2
+            <td>B2
+            <td>C2
+        <!--
+            O W3C permite usar as tags tr e td sem fechamento, como por exemplo acima.
+            Mas o professor recomenda que deixe fechado.
+        -->
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+        <tr class="linha">
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    </table>
+
+    <!--
+        Hierarquia de tabelas simples
+        Table
+            Table row
+                Table header
+                Table Data
+    -->
+</body>
+</html>
