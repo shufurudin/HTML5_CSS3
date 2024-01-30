@@ -10,3 +10,4 @@ Shift + TAB (Selecionando a palavra/texto e executando esse comando, ele joga o 
 Alt + selecionar (clicar em multiplos lugares segurando a tecla Alt, fará com que edite em multiplos lugares)
 Alt + seta pra cima (volta a pasta no explorador de arquivo)
 Alt + Shift + F (formata o código)
+Ctrl + ; (atalho para comentar a linha)
