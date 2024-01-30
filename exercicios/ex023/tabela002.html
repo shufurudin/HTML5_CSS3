@@ -12,7 +12,6 @@
         table {
             width: 450px;
             border-collapse: collapse;
-            position: relative; /* Necessário para fixar o cabeçalho da tabela. */
         }
         caption {
             font-size: 1.5em;
@@ -20,10 +19,9 @@
             padding: 10px;
             background-color: lightgray;
         }
-        thead > tr > th {
+        thead {
             position: sticky; /* Ficará grudado em relação ao position ta table, configurado anteriormente. Mas só ele não é necessário */
             top: -1px; /* -1px pois, se colocarmos 0, ficará "vazando" por cima um pouco da tabela. */
-            background-color: gray; /* Necessário para trazer junto o background, sem ele víra somente as letras */
         }
         thead, tfoot {
             background-color: gray;
