@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        td:nth-child(2) {
+            text-align: right;
+        }
+    </style>
+
+    <title>Tabelas</title>
+</head>
+<body>
+
+    <h1>Uso de tabelas grandes</h1>
+
+    <!-- 
+        anatomia para tabelas grandes
+            Table
+                Head
+                    tr, td, th
+                Tbody
+                    tr, td, th
+                Tfoot
+                    tr, td, th
+     -->
+
+     <table>
+        <thead>
+            <tr>
+                <th>Estado</th> <!--th: table header cell-->
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>44.411.238</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>16.054.524</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14.141.626</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td>11.444.380</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>10.882.965</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td>8.796.448</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td>8.452.381</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td>7.581.051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td>6.248.436</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td>6.003.788</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td>6.574.789</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td>3.766528</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td>3.483.985</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td>3.514.952</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td>3.035.122</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>3.168.027</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td>3.118.360</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>3.120.494</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td>2.570.160</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td>2.449.024</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>2.068.017</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td>1.562.409</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td>1.383.445</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td>733.559</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td>669.526</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>450.479</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td><strong>210.147.125</strong></td>
+            </tr>
+        </tfoot>
+     </table>
+    
+</body>
+</html>
