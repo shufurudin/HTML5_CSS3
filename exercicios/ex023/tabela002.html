@@ -10,8 +10,14 @@
         }
 
         table {
-            width: 500px;
+            width: 450px;
             border-collapse: collapse;
+        }
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
         }
         thead, tfoot {
             background-color: gray;
@@ -36,6 +42,7 @@
     <!-- 
         anatomia para tabelas grandes
             Table
+                Caption (legenda)
                 Head
                     tr, td, th
                 Tbody
@@ -45,10 +52,11 @@
      -->
 
      <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th> <!--th: table header cell-->
-                <th>População</th>
+                <th scope="col">Estado</th> <!--th: table header cell-->
+                <th scope="col" style="width: 60px;">População</th> <!-- scope na tag th é utilizado para fins semanticos. Ele serve para mostrar ao robozinho de pesquisa que os respectivos conteudos deste header está localizado abaixo dele, ou seja, na mesma coluna (col) ou está localizado na mesma linha (row)-->
             </tr>
         </thead>
         <tbody>
@@ -163,7 +171,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row">Total de habitantes</th>
                 <td><strong>210.147.125</strong></td>
             </tr>
         </tfoot>
