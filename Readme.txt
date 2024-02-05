@@ -1,5 +1,6 @@
 GitHub: https://github.com/gustavoguanabara/html-css/tree/master/aulas-pdf
 Site importante para HTML 5: https://html.spec.whatwg.org/multipage/obsolete.html#warnings-for-obsolete-but-conforming-features
+https://caniuse.com/
 
 Atalhos VS Code:
 Ctrl + Shift + P > Emmet: Wrap with Abbreviation (Para atribuir uma tag aos textos selecionados)
