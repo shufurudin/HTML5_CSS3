@@ -24,14 +24,15 @@
         <li><a href="paginas-extras/tabela006.html" target="frame">Segunda página</a></li>
         <li><a href="../ex001 (Meu primeiro site)/index.html" target="frame">Terceira página</a></li>
     </ul>
-    <!-- Na propriedade target nós informamos o nome do iframe e o link será aberto lá! -->
+    <!-- Na propriedade target nós informamos o 'name' do iframe e o link será aberto lá! -->
 
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quisquam culpa fuga dolore id. Sit dolore repellendus nisi nobis iure, esse maxime cum asperiores sunt sint beatae incidunt facilis illum velit tempora impedit harum! Distinctio, possimus aliquid modi earum blanditiis consequuntur quos rem soluta, quam asperiores id dolor ipsum provident saepe ullam eveniet quia, perspiciatis amet dolore maxime architecto tempora. Necessitatibus, maxime earum sed mollitia iste unde, pariatur itaque inventore commodi laudantium nesciunt similique id ex officiis delectus voluptatibus ipsum eligendi vel quod, dolores asperiores recusandae dignissimos. In ipsam molestias inventore natus ea, dolores facilis sint nisi fugit! Est quisquam ducimus atque odio, adipisci at culpa aspernatur aperiam placeat ipsa beatae qui porro suscipit optio magni unde nobis corrupti accusamus.</p>
 
-    <iframe src="" frameborder="0" name="frame">
+    <iframe srcdoc="<h1 style='text-align: center;'> Escolha uma das opções acima</h1>" frameborder="0" name="frame">
         <p>Infelizmente o recusro iframe não é compativel com seu navegador...</p>
     </iframe>
     <!-- Precisamos colocar uma name no iframe -->
+    <!-- Com srcdoc é possivel passar HTML dentro da tela do iframe, não é recomendado fazer isso e sim colocar com src uma página exterior -->
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, officiis. Dignissimos minima eveniet, corporis reprehenderit provident magnam facilis ipsa totam!</p>
 </body>
 </html>
