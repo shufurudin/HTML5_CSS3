@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        iframe {
+            display: block;
+            margin: auto;
+            border: 1px solid brown;
+        }
+        iframe.table {
+            width: 70vw;
+            height: 450px;
+        }
+        p.error {
+            color: red;
+            font-weight: bold;
+            font-size: 2em;
+        }
+    </style>
+    <title>iframe</title>
+</head>
+<body>
+    <h1>Teste de iframe</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet laborum voluptates quidem nobis, in enim, doloremque quis asperiores ratione culpa saepe aliquid, numquam officia sapiente blanditiis! Sit facere laborum molestiae eum cumque ipsa modi ipsam, mollitia consequuntur dolorem ex tempora dolor obcaecati quas a voluptatibus illum temporibus reprehenderit itaque repudiandae. Soluta sed repellendus itaque consectetur.</p>
+
+    <iframe src="paginas-extras/pag001.html" frameborder="0">
+        <p class="error">Infelizmente seu navegador não é compativel com iframe...</p>
+    </iframe>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates officiis perspiciatis velit ea reprehenderit amet dolor quas praesentium provident! Enim totam rem dolorem iusto non, voluptatibus corporis reiciendis ducimus et quibusdam quae recusandae omnis optio ipsam explicabo provident molestias voluptate? Numquam, nulla similique! In sint error dolore eligendi saepe necessitatibus, nobis dolor, esse vel ipsa voluptates ipsam fugit. Quos sequi explicabo quis dolorem, nobis corporis dicta fugit repellendus, quia cum hic exercitationem fuga atque quibusdam ullam soluta autem aut itaque commodi quod nesciunt. Nihil, aspernatur commodi. Laborum tempora repellat doloremque.</p>
+
+    <iframe src="paginas-extras/tabela006.html" frameborder="0" class="table">
+        <p class="error">Infelizmente seu navegador não é compativel com iframe...</p>
+    </iframe>
+    <!-- Não é recomendado colocar tabelas dentro de iframes, pois isso atrapalha os sistemas de busca -->
+</body>
+</html>

@@ -1,1 +1,0 @@
-i-frame (inline-frame): quadro em linha.
