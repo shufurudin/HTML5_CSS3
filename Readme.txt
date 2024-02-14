@@ -12,3 +12,18 @@ Alt + selecionar (clicar em multiplos lugares segurando a tecla Alt, fará com q
 Alt + seta pra cima (volta a pasta no explorador de arquivo)
 Alt + Shift + F (formata o código)
 Ctrl + ; (atalho para comentar a linha)
+
+Extensões
+- HTML Boilerplate
+- HTML CSS Support
+- JavaScript (ES6) code snippets
+- Live Server
+- PHP Intelephense
+- Angular Language Service
+- Auto Close Tag
+- Auto Rename Tag
+- Material Icon Theme
+- ESLint
+
+Configuração do VSCode
+
