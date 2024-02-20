@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- TODO <th> deve haver um scope, informando que aquele cabeçalho <th> é referente ao dado <td> naquela linha ou coluna -->
     <style>
         *{
             font-family: Arial, Helvetica, sans-serif;
@@ -34,13 +35,16 @@
         <thead>
             <tr>
                 <th scope="col">Grupo</th>
+                <!-- scope="col" informa que o cabeçalho (th) Grupo é referente aos dados (td) em sua coluna -->
                 <th scope="col">Nomes</th>
                 <th scope="colgroup" colspan="3">Filmes</th>
+                <!-- scope="colgroup" deve ser utilizado quando temos colspan, para informar que este cabeçalho corresponde a um conjunto de dados em mais de uma coluna -->
             </tr>
         </thead>
         <tbody>
             <tr>
                 <th scope="rowgroup" rowspan="3">Mulheres</th>
+                <!-- scope="rowgroup" deve ser utilizado quando temos rowspan, para informar que este cabeçalho corresponde a um conjunto de dados em mais de uma linha -->
                 <td>Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
