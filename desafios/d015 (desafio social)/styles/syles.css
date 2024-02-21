@@ -36,10 +36,10 @@ section#telefone {
 
 iframe#tela {
     position: relative;
-    top: 80px;
-    left: 22px;
-    width: 267px;
-    height: 471px;
+    top: 81px;
+    left: 23px;
+    width: 265px;
+    height: 469px;
     /* A configuração para o tamanho da tela foi feita somente aqui e atribuindo o shorthand de background e size lá no outro html. */
 }
 
@@ -53,10 +53,11 @@ section#redes-sociais img {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
     box-sizing: border-box;
     /* Faz com que a borda faça parte da box e não algo novo e separado. Isso evita de, ao fazermos um hoover que coloca uma borda, a borda surja e movimento o item mas sim apareça a borda somente diminuindo o conteudo de dentro. */
+    transition: 300ms;
 }
 section#redes-sociais img:hover {
-    border: 1px solid rgba(255, 255, 255, 0.603);
+    border: 1px solid rgba(255, 255, 255, 0.500);
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
-    transition: 300ms;
+    /* O professor colocou o transition dentro do hover, porém eu coloquei no elemento em que será aplicado o hover pois a movimentação fica suave tnato na ida quanto na volta. Colocando o transition aqui no hover a "animação" funciona somente na ida. */
 }
