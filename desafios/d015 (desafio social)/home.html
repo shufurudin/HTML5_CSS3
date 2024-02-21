@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            /*
+                Mesmo com tudo em 100% de tela, essa imagem está no tamanho ideal para o iframe. Pois as configurações setadas aqui para o background são válidas para onde ele irá abrir e não somente dentro do próprio arquivo.
+                Como este HTML abrirá dentro do iframe do index, todas as configurações aqui serão válidas para lá, de acordo com as dimensões de lá!
+                Se abrir este home a imagem estará toda distorcida, mas não importa, o importante é o que será exibido no iframe.
+            */
+            background: black url(imagens/tela-home.jpg) no-repeat fixed top center;
+            /* Mais uma vez a importancia de se utilizar o shorthand completo, dessa forma nós utilizamos o background-position que é INDISPENSÁVEL para se utilizar posicionamento e etc */
+            background-size: cover;
+        }
+    </style>
+    <title>Home</title>
+</head>
+<body>
+    
+</body>
+</html>

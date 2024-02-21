@@ -31,5 +31,32 @@ section#telefone {
     height: 627px;
     width: 311px;
     background: url(../imagens/frame-iphone.png) no-repeat;
-    /* Professor foi mais experto, atribuiu a imagem do celular com background. Eu compliquei colocando um img dentro de uma div... */
+    /* Professor foi mais experto, atribuiu a imagem do celular como background. Eu compliquei colocando um img dentro de uma div... */
+}
+
+iframe#tela {
+    position: relative;
+    top: 80px;
+    left: 22px;
+    width: 267px;
+    height: 471px;
+    /* A configuração para o tamanho da tela foi feita somente aqui e atribuindo o shorthand de background e size lá no outro html. */
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+section#redes-sociais img {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.404);
+    box-sizing: border-box;
+    /* Faz com que a borda faça parte da box e não algo novo e separado. Isso evita de, ao fazermos um hoover que coloca uma borda, a borda surja e movimento o item mas sim apareça a borda somente diminuindo o conteudo de dentro. */
+}
+section#redes-sociais img:hover {
+    border: 1px solid rgba(255, 255, 255, 0.603);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.548);
+    transition: 300ms;
 }
