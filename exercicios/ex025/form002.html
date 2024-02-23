@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Digite seu usuário" autocomplete="username">
+            <!--
+                - O atributo required é para que esse input seja de preenchimento obrigatório, caso não seja, o botão submit dará um aviso para que os campos obrigatórios sejam preechidos.
+                - minlength e maxlength servem para que os dados insseridos obedeçam um número minimo e máximo de caracteres.
+                - Atributo size altera o tamanho da caixa para ser exibido de acordo com um num x de caracteres, neste caso a caixa foi reduzida para mostrar 10 letras.
+                - placehoder serve para colocar um texto prévio dentro da caixa, dando uma "dica" ao cliente para o que deve ser preenchido ali naquele input.
+                - autocomplete para input serve para mostar ao navegador que aquele input é referente a um input comum, por exemplo, username, password, address e etc. Nesse caso nós colocamos como username e, de acordo com a memória cache do navegador, ele já puxa para o usuário os usernames em que ele utiliza normalmente em outros sites!
+            -->
+        </p>
+        <p>
+            <label for="isen">Senha:</label>
+            <input type="password" name="sen" id="isen" required minlength="8" size="8" placeholder="Sua senha" autocomplete="current-password">
+            <!-- Input do tipo password censura os dados que estão sendo digitados em tela -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+            <!-- input reset é justament um botão que irá resetar todos os dados dentro daquele form -->
+        </p>
+    </form>
+</body>
+</html>
