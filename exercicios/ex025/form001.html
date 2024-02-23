@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label>
+            <!--
+                Label serve para associar o texto daquele input a ele mesmo. Precisamos fazer essa associação pois ela não é feita automaticamente pelo navegador.
+                Com isso, o navegador e sistemas de buscas poderão melhor interpretar e classificar nosso form.
+                Em for deve ser associado o mesmo nome da propriedade id do input a ser referenciado.
+                Label também é muito útil para os celulares, pois, ao fazer a associação entre input e o texto, o navegador do celular entende e faz com que as partes dos formulários sejam mais fáceis de serem clickadas com o toque, formando melhor uma região na tela para o preenchimento. Quem tem dedo gordo e tela pequena, agradece.
+            -->
+            <input type="text" name="nome" id="inome"></p>
+        <!-- Todo tipo de input text deve conter name e id -->
+        <p><label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+        <p><input type="submit" value="Enviar"></p>
+    </form>
+    <!-- Todo formulário deve estar dentro da tag form. -->
+    <!-- Propriedade autocomplete em off no form serve para retirar aquele balão de sugestão de preenchimento dos campos. -->
+    <!-- A propriedade action levará os dados inseridos dentro do form para tal endereço (banco de dados, servidor, url, etc) após o botão de submit ter sido precionado. -->
+    <!--
+        As propriedades de name e id são mais importantes para o recebedor desses dados do input do que para uso aqui no HTML, é com eles que o recebedor (PHP, Java Server etc) identificarão um input de outro.
+        Onde o name é mais util no próprio HTML e PHP, enquanto o id é para o JS e uso da tag label.
+    -->
+</body>
+</html>

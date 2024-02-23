@@ -39,7 +39,7 @@ iframe#tela {
     top: 81px;
     left: 23px;
     width: 265px;
-    height: 469px;
+    height: 469px; 
     /* A configuração para o tamanho da tela foi feita somente aqui e atribuindo o shorthand de background e size lá no outro html. */
 }
 
