@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+
+    <form method="get" action="cadastro.php">
+        <fieldset>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <!-- Legend é a legenda do fieldset para aquele grupo de inputs, explicitando ao cliente as intenções daquela parte do formulário. -->
+                <p>
+                    <label for="nome">Nome <input type="text" name="nome" id="nome" minlength="5" maxlength="35" autocomplete="name"></label>
+                </p>
+                <p>
+                    <label for="email">E-mail <input type="email" name="email" id="email" autocomplete="email" required></label>
+                    <!--
+                        input tipo email exige que o cliente insira ao menos dois caracteres, o @ e o .
+                        Certo que esse controle não é nada satisfatório mas é básico, os verificadores de email genuino deverão ser considerados em JS e PHP.
+                    -->
+                </p>
+                <p>
+                    <label for="tel">Telefone <input type="tel" name="tel" id="tel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxxx-xxxx" required></label>
+                    <!--
+                        input do tipo tel é também muito limitado, tanto é que colocamos o atributo pattern que admite RegEx para filtrarmos melhor o que o cliente irá colocar, até colocamos um placeholder para informar ao cliente o modo em que ele deve informar seu telefone. Contudo, como dito acima, a validação de dados deve estar no escrutinio do JS ou PHP.
+                        TIP? Quem sabe essa validação de dados não possa ser atribuida aqui no HJTML e lá em JS/PHP? Fazendo uma validação mais geral aqui e outra mais minuciosa lá, dividindo as frutas em mais de um cesto!
+                    -->
+                </p>
+            </fieldset>
+        </fieldset>
+        <!--
+            fieldset serve para agrupar varios inputs que correspondem a um esmo assunto.
+            Podem ahaver fieldset dentro de outrso fieldsets (ver aulas e projeto do freeCodeCamp)
+        -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
