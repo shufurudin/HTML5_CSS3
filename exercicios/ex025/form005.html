@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form method="get" action="cadastro.php" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sex" id="masculino" value="M"> <label for="masculino">Masculino</label>
+            <input type="radio" name="sex" id="feminino" value="F"> <label for="feminino">Feminino</label>
+            <input type="radio" name="sex" id="nda" value="nda" checked> <label for="nda">Não informado</label>
+            <!--
+                Os inputs tipo radio devem possuir name para assimilar todos os botões da mesma "categoria". Caso os inputs não tenham o mesmo name, o cliente poderá clicar em todas as opções disponiveis e não conseguirá desmarcar, pois esse atributo o navegadoer entende que cada input é independente um do outro.
+                O atributo checked trará como padrão aquele input já marcado. Isso é bom, pricipalmente em radios, para caso o cliente esqueça de selecionar uma das opções, aquela opção "padrão" seja considerada e não fique faltando a informação na hora do recebimento do form pelo php/java/etc.
+                Lembrar de sempre colocar um value nos radios para que apareça no envio do form o que o cliente assinalou, caso contrário aparecerá somente como "sex=on"
+            -->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+            <input type="checkbox" name="esbas" id="esbas"> <label for="esbas">Basquete</label> <br>
+            <input type="checkbox" name="esfut" id="esfut"> <label for="esfut">Futebol</label> <br>
+            <input type="checkbox" name="esnat" id="esnat"> <label for="esnat">Natação</label> <br>
+            <input type="checkbox" name="esten" id="esten"> <label for="esten">Tênis</label>
+            <!-- br somente para deixar um embaixo do outro -->
+        </fieldset>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
