@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form method="get" action="cadastro.php">
+        <p>
+            <label for="cor">Cor: </label>
+            <input type="color" name="cor" id="cor" value="#00ff00">
+        </p>
+        <p>
+            <label for="nivel">Nível de Satisfação: </label>
+            <input type="range" name="nivel" id="nivel" min="1" max="5">
+        </p>
+        <!-- 
+            Estes dois inputs acima podém sofrer alterações em alguns navegadores, nos piores casos podem ser considerados como caixas de texto...
+        -->
+        <p>
+            <label for="arquivo"><input type="file" name="arquivo" id="arquivo"></label>
+            <!-- 
+                Para utilizar esse tipo de input, envio de arquivos, deve ser considerado o metodo POST e não o GET para o form. Caso contrário, o arquivo não será enviado.
+            -->
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
