@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form method="post" action="cadastro.php">
+        <p>
+            <label for="est">Estado:</label>
+            <select name="est" id="est">
+                <option value="" selected>--- Escolha ---</option>
+                <optgroup label="Região Sudeste">
+                    <option value="SP">São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+            <!-- 
+                select é um elemento do qual se pode inserir várias opções através dos options e que uma delas deverá ser selecionada via menu de rolagem.
+                O optgroup serve para dividir as opções dentro do select, neste caso separamos os estados por regiões do país. O atributo label permite que o usuário veja a subdivisão e leia uma descrição sobre ela.
+                Lembrar de colocar value nos options para que eles sejam devidamente identificados após o envio do form.
+            -->
+        </p>
+        <p>
+            <label for="prof">Profissão:</label>
+            <input type="text" name="prof" id="prof" list="lstproof">
+            <datalist id="lstproof">
+                <option>Entregador</option>
+                <option>Caminhoneiro</option>
+                <option>Taxista</option>
+                <option>Autonomo</option>
+                <option>Motorista</option>
+            </datalist>
+            <!-- 
+                input do tipo text com o datalist é semelhante ao select com options, porém neste caso nós permitimos ao usuário digitar o que deseja caso sua opção não esteja disponível na lista.
+                Colocando o elemento datalist e atribuindo um id, as options aparecerão como menu de rolagem no input text quando associarmos seu id via o atributo list.
+            -->
+        </p>
+        <p>
+            <label for="">Mensagem:</label>
+            <br>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Sua mensagem aqui, máximo 500 caracteres." maxlength="500"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
