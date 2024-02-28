@@ -1,2 +1,26 @@
 @charset "UTF-8";
 /* CSS geral */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #233EFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* 
+        Obviamente, as configurações gerais devem ser colocadas aqui. Todas as configs de backgorund que aqui estão, funcionam para ambos os media types.
+        Ao invés de colocar no-repeat e contain em cada media type que são necessários, foram colocados aqui.
+    */
+}
+
+h1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.301);
+    padding: 10px;
+    color: white;
+}

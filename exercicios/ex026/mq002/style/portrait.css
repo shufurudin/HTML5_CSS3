@@ -1,2 +1,8 @@
 @charset "UTF-8";
 /* CSS para "de pé" ou retrato */
+
+body {
+    background-image: url(../img/cev-portrait.jpg);
+    background-position: center bottom;
+    /* O position, por uma imagem ter a necessidade diferente da outra, foi colocado aqui neste css e no outro também. */
+}
