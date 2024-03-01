@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!-- 
+        Mobile first consiste em produzir o site pensando nos dispositivos móveis, o desenvolvimento deve ser numa tela pequena e, não só isso, mas também com HTML e CSS rápidos e leves. Algumas coisas que se devem ter em conta ao desenvolver site com o ideal mobile first:
+            - Telas pequenas.
+            - Memoria e processamento limitados.
+            - Internet pode ser um problema (consumo de banda 3g, 4g etc.)
+        Luke Wroblewski, um dos pais do mobile first, alerta para que os desenvolvedores comecem a utilizar tal tecnica, pois os mecanismos de busca dão maior preferencia aos sites desenvolvidos dessa forma.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css" media="all">
+    <link rel="stylesheet" href="styles/media-queries.css">
     <title>Media Query</title>
 </head>
 <body>
-    
+    <main>
+        <h1>Testando Media Queries</h1>
+        <img src="img/icon-phone.png" alt="Icone de smartphone" id="phone">
+        <img src="img/icon-tablet.png" alt="Icone de tablet" id="tablet">
+        <img src="img/icon-print.png" alt="Icone de impressora" id="print">
+        <img src="img/icon-pc.png" alt="Icone de laptop" id="pc">
+        <img src="img/icon-tv.png" alt="Icone de TV" id="tv">
+    </main>
 </body>
 </html>
