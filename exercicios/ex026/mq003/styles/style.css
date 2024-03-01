@@ -1,0 +1,54 @@
+@charset "URF-8";
+
+/* 
+    Para projetos pequenos é viavel fazer desta forma, colocar todos os media types dentro de um CSS só, porém, ao passar do tempo e o site for ganhando corpo, vai acabar bagunçando muito e o arquivo será extremamente extenso.
+    A forma mais adequada é fazer um CSS para cada media type.
+*/
+
+/* ------------------------- CSS Geral ------------------------- */
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #233EFF;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.301);
+    padding: 10px;
+    color: white;
+}
+
+
+/* ----------------------- CSS portrait ----------------------- */
+
+
+@media screen and (orientation: portrait) {
+    body {
+    background-image: url(../img/cev-portrait.jpg);
+    background-position: center bottom;
+    }
+}    
+/*
+    Utilizando o @media, nós podemos fazer aquilo que fizemos dentro do HTML no exercicio passado, porém dentro do CSS.
+    Então nós colocamos o @media, depois o tipo de media que é screen nesse caso e o and (orientatio: ...) para informar se é portrait ou landscape. Mesmíssima fentia em HTML só que um pouco diferente dentro do CSS.
+*/
+
+/* ---------------------- CSS landscape ---------------------- */
+
+
+@media screen and (orientation: landscape) {
+    body {
+    background-image: url(../img/cev-landscape.jpg);
+    background-position: left bottom;
+    }
+}
